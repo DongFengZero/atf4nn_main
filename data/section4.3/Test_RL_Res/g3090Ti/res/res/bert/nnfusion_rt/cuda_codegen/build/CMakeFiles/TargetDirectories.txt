@@ -1,0 +1,4 @@
+/root/ATF4NN_New3/res/bert/nnfusion_rt/cuda_codegen/build/CMakeFiles/nnfusion_naive_rt.dir
+/root/ATF4NN_New3/res/bert/nnfusion_rt/cuda_codegen/build/CMakeFiles/main_test.dir
+/root/ATF4NN_New3/res/bert/nnfusion_rt/cuda_codegen/build/CMakeFiles/edit_cache.dir
+/root/ATF4NN_New3/res/bert/nnfusion_rt/cuda_codegen/build/CMakeFiles/rebuild_cache.dir
