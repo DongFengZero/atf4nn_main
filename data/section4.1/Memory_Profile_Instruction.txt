@@ -1,0 +1,7 @@
+ncu --metrics l1tex__data_pipe_lsu_wavefronts_mem_shared_op_ld.sum,l1tex__data_pipe_lsu_wavefronts_mem_shared_op_st.sum --launch-count 999999999 ./build/main_test 2>&1 | awk '
+/wavefronts_mem_shared_op_ld/ { gsub(/,/, "", $NF); smem_read += $NF * 32 * 4 }
+/wavefronts_mem_shared_op_st/ { gsub(/,/, "", $NF); smem_write += $NF * 32 * 4 }
+END {
+    printf "SMEM total: %.4f GB\n", (smem_read + smem_write) / 1024 / 1024 / 1024
+}
+'
